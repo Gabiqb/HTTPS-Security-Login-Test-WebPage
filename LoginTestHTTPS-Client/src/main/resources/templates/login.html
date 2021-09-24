@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="default">
+      <link rel="stylesheet" href="/css/style.css">
+<head>
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">HTTPS-Gabi Stefan</title>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="text-center">
+<div layout:fragment="content">
+    <form class="form-signin" th:action="@{/login}" method="post">
+        <img id="agentlog" class="mb-4" src="/css/images/Agent-Login.jpg" alt="" width="300" height="100" />
+        <h1 class="h3 mb-3 font-weight-normal" id="plsSign" >Please sign in</h1>
+        <div th:if="${param.error}">
+            Invalid email and password.
+        </div>
+        <div th:if="${param.logout}">
+            You have been logged out.
+        </div>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required="" />
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required="" />
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="remember-me" name="remember-me">
+            <label class="form-check-label" for="remember-me" id="remember-me-label">Remember me?</label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="signbtn">Sign in</button>
+    </form>
+    <form class="form-signin" th:action="@{/signup}" method="get">
+        <button  class="btn btn-md btn-success btn-block" type="Submit" id="sgnupbtn">Signup Here</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+h1 {
+    color: rgb(215, 71, 5);
+    font: 30px bold;
+    font-weight: 0.5;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0px 4px 5px rgb(3, 64, 128);
+    line-height: 1.6;
+    letter-spacing: 5px;
+    position: relative;
+    left: 670px;
+}
+
+body {
+    background: url("images/backgroundlogin.jpg") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-position: center;
+    position: relative;
+    width:850px;
+    background-position-x:100%;
+}
+
+.login {
+    color: rgb(197, 109, 9);
+    background: no-repeat center center fixed;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-shadow: 0px 4px 5px rgb(65, 50, 164);
+    position: relative;
+    left: 750px;
+    bottom: 50px;
+    border-radius: 10px;
+}
+
+.lg {
+    position: relative;
+    z-index: -1;
+    width: 1550px;
+    height: 250px;
+    left: 15px;
+    top: 100px;
+}
+
+.user {
+    font: 30px bold;
+    font-weight: 0.5;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0px 4px 5px red;
+    line-height: 1.6;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: relative;
+    left: 450px;
+    top: 200px;
+}
+
+.pass {
+    font: 30px bold;
+    font-weight: 0.5;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0px 4px 5px red;
+    line-height: 1.6;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: relative;
+    left: 450px;
+    bottom: 50px;
+}
+
+.username {
+    color: black;
+    font-size: 30px;
+    position: relative;
+    left: 450px;
+    top: 200px;
+}
+
+.password {
+    color: rgb(0, 0, 0);
+    position: relative;
+    font-size: 30px;
+    left: 450px;
+    bottom: 50px;
+}
